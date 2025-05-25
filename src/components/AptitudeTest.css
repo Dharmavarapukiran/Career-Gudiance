@@ -1,0 +1,151 @@
+.aptitude-test-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-count {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.question-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.options-section {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.option-label {
+  background: #ecf0f1;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.option-label:hover {
+  background: #d0e6f7;
+}
+
+.option-label input[type="radio"] {
+  margin-right: 14px;
+  accent-color: #2980b9;
+  cursor: pointer;
+}
+
+.option-label input[type="radio"]:checked + span,
+.option-label input[type="radio"]:checked {
+  border-color: #2980b9;
+  background-color: #d0e6f7;
+}
+
+.timer {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e67e22;
+  text-align: center;
+  user-select: none;
+}
+
+.navigation-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-nav,
+.btn-submit,
+.btn-submit-disabled {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.4);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn-nav {
+  background-color: #2980b9;
+}
+
+.btn-nav:disabled {
+  background-color: #a0b9d8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-nav:hover:not(:disabled) {
+  background-color: #1c5980;
+}
+
+.btn-submit {
+  background-color: #27ae60;
+  display: inline-block;
+  line-height: normal;
+}
+
+.btn-submit:hover {
+  background-color: #1e8449;
+}
+
+.btn-submit-disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .aptitude-test-container {
+    padding: 20px;
+    margin: 20px 15px;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+  }
+
+  .btn-nav,
+  .btn-submit,
+  .btn-submit-disabled {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}

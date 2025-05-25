@@ -1,0 +1,166 @@
+/* TestCompletionPage.css */
+
+.test-completion-container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #e3f2fd;  /* light blue background */
+  padding: 40px 50px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a237e; /* Dark indigo text */
+  text-align: center;
+}
+
+.test-completion-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #0d1361;
+}
+
+.test-completion-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+}
+
+.result-summary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #283593; /* Slightly lighter indigo */
+}
+
+.placement-info {
+  font-size: 1.1rem;
+  color: #3949ab;
+  margin-bottom: 40px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.choice-section {
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1a237e;
+  text-align: left;
+}
+
+.choice-section label {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #283593;
+}
+
+.choice-section input[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.retry-message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d32f2f; /* Red for alert */
+  margin-bottom: 25px;
+}
+
+.retry-button {
+  background-color: #1a237e;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.retry-button:hover {
+  background-color: #283593;
+}
+
+@media (max-width: 480px) {
+  .test-completion-container {
+    padding: 30px 25px;
+  }
+  
+  .test-completion-container h2 {
+    font-size: 2rem;
+  }
+  
+  .result-summary, .placement-info {
+    font-size: 1.1rem;
+  }
+  
+  .retry-button {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
+
+.test-completion-container, .location-selection-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: #2a5298;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #1e3c72;
+}
+
+.btn-next, .btn-back {
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-next:hover, .btn-back:hover {
+  background-color: #2a5298;
+}
+
+.location-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.location-options label {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.university-display {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #333;
+}

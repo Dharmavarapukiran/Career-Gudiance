@@ -1,0 +1,282 @@
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-toggle:hover {
+  color: #ffc107;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  background-color: #1e3c72; /* dark blue */
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  right: 0;
+  color: white;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.dropdown-menu .Login{
+  color: black;
+  
+}
+
+.dropdown-menu p {
+  color: black;
+  font-size: small;
+}
+
+.dropdown-menu a:hover {
+  
+  color: black;
+}
+
+
+/* IMPORTANT: Do not include hover logic here */
+
+
+
+
+
+/* Aptitude Section */
+
+.aptitude-section {
+  background-color: #fff8dc; /* light yellow */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.aptitude-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aptitude-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.aptitude-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.aptitude-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.aptitude-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1556761175-129418cb2dfe') no-repeat center center/cover;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ffc107;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e0a800;
+}
+
+/* About Section */
+.about {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 850px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+/* How It Works Section */
+.how-it-works {
+  background: #e8f0fe;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.how-it-works ol {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  
+}
+
+.user-profile {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.user-icon {
+  background-color: #3f51b5;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 1.2rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 15px;
+  border-radius: 6px;
+  width: 180px;
+  z-index: 10;
+  font-size: 0.9rem;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Existing dropdown styles (for login dropdown) should be compatible */
+
